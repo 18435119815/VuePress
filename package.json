@@ -4,8 +4,9 @@
   "description": "使用vuepress搭建个人博客",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "vuepress run deploy.sh"
   },
   "repository": {
     "type": "git",

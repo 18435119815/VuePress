@@ -1,3 +1,8 @@
+// 引入Element-ui
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+
 // 使用异步函数也是可以的
 export default ({
     Vue, // VuePress 正在使用的 Vue 构造函数
@@ -6,5 +11,5 @@ export default ({
     siteData, // 站点元数据
     isServer // 当前应用配置是处于 服务端渲染 或 客户端
   }) => {
-    // ...做一些其他的应用级别的优化
+    Vue.use(Element);
   }
