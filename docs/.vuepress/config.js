@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Mr哎呦喂的博客',
   description: '欢迎来到我的小窝',
-  base: '/VuePress/',
+  base:'/VuePress/',
   head: [
     ["link", { rel: "icon", href: "/assets/img/icon1.png" }],
     // 百度统计代码
@@ -21,13 +21,16 @@ module.exports = {
   ],
   themeConfig: {
     logo: '/assets/img/hero.png',
-    // navbar: false,//禁用页面所有导航(导航栏消失不见)
+    //禁用页面所有导航(导航栏消失不见)
+    // navbar: false,
+    // 导航栏深度
+    sidebarDepth: 2,
     // 头部导航配置
     nav: [
       { text: '首页', link: '/' },
       { text: '关于我', link: '/about' },
       { text: 'External', link: 'https://google.com' },
-      { text: '人生心得', link: 'https://163.com' },
+      { text: '人生心得', link: '/lifeExperience/' },
       { text: '百度', link: 'https://www.baidu.com' },
       {
         text: '选择语言',
@@ -44,7 +47,9 @@ module.exports = {
     ],
     sidebar: {
       '/foo/':['','one','two'],
-      '/vue/':['','vue-x']
+      '/vue/':['','vue-x'],
+      '/lifeExperience/':[''],
+      '/markDown/':['']
     }
   }
 }
