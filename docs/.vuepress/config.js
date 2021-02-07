@@ -33,11 +33,11 @@ module.exports = {
       { text: '人生心得', link: '/lifeExperience/' },
       { text: '百度', link: 'https://www.baidu.com' },
       {
-        text: '选择语言',
+        text: '技术文档',
         items: [
           {
-            text: 'Group1', items: [
-              { text: 'Home', link: '/' },
+            text: 'JS', items: [
+              { text: 'Home', link: '/JS/' },
               { text: 'Guide', link: '/about' },
             ]
           },
@@ -46,8 +46,9 @@ module.exports = {
       }
     ],
     sidebar: {
+      '/JS/':['','Object','Math'],
       '/foo/':['','one','two'],
-      '/vue/':['','vue-x'],
+      '/vue/':['','vue-x','interview'],
       '/lifeExperience/':[''],
       '/markDown/':['']
     }
