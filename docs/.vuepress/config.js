@@ -37,8 +37,8 @@ module.exports = {
         items: [
           {
             text: 'JS', items: [
-              { text: 'Home', link: '/JS/' },
-              { text: 'Guide', link: '/about' },
+              { text: '基础使用', link: '/JS/' },
+              { text: '浏览器', link: '/browser/' },
             ]
           },
           { text: 'Group2', items: [/*  */] }
@@ -50,7 +50,8 @@ module.exports = {
       '/foo/':['','one','two'],
       '/vue/':['','vue-x','interview'],
       '/lifeExperience/':[''],
-      '/markDown/':['']
+      '/markDown/':[''],
+      '/browser/':[''],
     }
   }
 }

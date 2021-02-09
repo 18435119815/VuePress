@@ -1,9 +1,9 @@
 ---
 home: true
 heroImage: /assets/img/hero.png
-heroText: Hero 标题
-tagline: Hero 副标题
-actionText: 快速上手 →
+heroText: Mr哎呦喂的小窝
+tagline: 一个正直、善良、三观正的小伙子
+actionText: 主页 →
 actionLink: /vue/
 features:
 - title: 简洁至上
@@ -17,3 +17,4 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 <Mp3Player/>
 
 # Hello VuePress
+<live2D/>
