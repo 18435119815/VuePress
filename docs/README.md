@@ -1,20 +1,19 @@
 ---
 home: true
-heroImage: /assets/img/hero.png
+heroImage: /assets/img/詹姆斯1.jpg
 heroText: Mr哎呦喂的小窝
-tagline: 一个正直、善良、三观正的小伙子
-actionText: 主页 →
+tagline: 一个阳光、善良、没什么坏心眼的小伙子
+actionText: 随便看看 →
 actionLink: /vue/
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+- title: 爱好广泛
+  details: 唱歌、画画、跳舞、吉他、旅行,啥都喜欢,只是没什么时间和金钱支持。
+- title: 贡献
+  details: 目前做过唯一对社会有贡献的事情，可能就是献了7次400cc的血了吧。
+- title: 母胎solo
+  details: 从出生到现在还未谈过一次恋爱,月老可能是把我拉黑了。
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 <Mp3Player/>
 
-# Hello VuePress
-<live2D/>
+<!-- <live2D/> -->

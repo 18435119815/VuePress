@@ -28,7 +28,7 @@ module.exports = {
     // 头部导航配置
     nav: [
       { text: '首页', link: '/' },
-      { text: '关于我', link: '/about' },
+      { text: '关于我', link: '/myself/' },
       { text: 'External', link: 'https://google.com' },
       { text: '人生心得', link: '/lifeExperience/' },
       { text: '百度', link: 'https://www.baidu.com' },

@@ -151,7 +151,7 @@ console.log(a.host);  //www.cnblogs.com
 ## 加载CDN文件时，可以省掉HTTP标识
 现在很流行的CDN即从专门的服务器加载一些通用的JS和CSS文件，出于安全考虑有的CDN服务器使用HTTPS方式连接，而有的是传统的HTTP，其实我们在使用时可以忽略掉这个，将它从URL中省去。
 ```
-<script src="//domain.com/path/to/script.js"></script>
+<script src="//domain.com/../path/to/script.js"></script>
 ```
 ---
 <br><br>
