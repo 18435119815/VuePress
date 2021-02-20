@@ -41,14 +41,16 @@ module.exports = {
               { text: '浏览器', link: '/browser/' },
             ]
           },
-          { text: 'Group2', items: [/*  */] }
+          { text: 'vue', items: [
+            { text: 'ssr', link: '/vue/ssr/' }
+          ] }
         ]
       }
     ],
     sidebar: {
       '/JS/':['','Object','Math'],
       '/foo/':['','one','two'],
-      '/vue/':['','vue-x','interview'],
+      '/vue/':['','vue-x','interview','sourceCode','ssr'],
       '/lifeExperience/':[''],
       '/markDown/':[''],
       '/browser/':[''],
