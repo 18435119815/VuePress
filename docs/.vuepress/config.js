@@ -24,12 +24,11 @@ module.exports = {
     //禁用页面所有导航(导航栏消失不见)
     // navbar: false,
     // 导航栏深度
-    sidebarDepth: 2,
+    sidebarDepth: 3,
     // 头部导航配置
     nav: [
       { text: '首页', link: '/' },
       { text: '关于我', link: '/myself/' },
-      { text: 'External', link: 'https://google.com' },
       { text: '人生心得', link: '/lifeExperience/' },
       { text: '百度', link: 'https://www.baidu.com' },
       {
@@ -43,6 +42,9 @@ module.exports = {
           },
           { text: 'vue', items: [
             { text: 'ssr', link: '/vue/ssr/' }
+          ] },
+          { text: '其他知识', items: [
+            { text: '移动端', link: '/knowledge/mobileAPP/' }
           ] }
         ]
       }
@@ -50,10 +52,11 @@ module.exports = {
     sidebar: {
       '/JS/':['','Object','Math'],
       '/foo/':['','one','two'],
-      '/vue/':['','vue-x','interview','sourceCode','ssr'],
+      '/vue/':['','vue-x','interview','sourceCode','ssr','project','vue3'],
       '/lifeExperience/':[''],
       '/markDown/':[''],
       '/browser/':[''],
+      '/knowledge/':['mobileAPP']
     }
   }
 }

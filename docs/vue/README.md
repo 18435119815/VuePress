@@ -23,3 +23,6 @@
 
 
 ![vuepress](/assets/img/hero.png) 
+
+
+<baiduMap></baiduMap>
