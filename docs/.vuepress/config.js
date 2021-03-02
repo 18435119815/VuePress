@@ -30,7 +30,7 @@ module.exports = {
       { text: '首页', link: '/' },
       { text: '关于我', link: '/myself/' },
       { text: '人生心得', link: '/lifeExperience/' },
-      { text: '百度', link: 'https://www.baidu.com' },
+      { text: '网址导航', link: '/website/' },
       {
         text: '技术文档',
         items: [
@@ -55,8 +55,9 @@ module.exports = {
       '/vue/':['','vue-x','interview','sourceCode','ssr','project','vue3'],
       '/lifeExperience/':[''],
       '/markDown/':[''],
+      '/website/':[''],
       '/browser/':[''],
-      '/knowledge/':['mobileAPP']
+      '/knowledge/':['mobileAPP','webpack','other']
     }
   }
 }

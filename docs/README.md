@@ -15,5 +15,3 @@ features:
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 <Mp3Player/>
-
-<!-- <live2D/> -->
