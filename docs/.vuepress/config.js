@@ -57,7 +57,8 @@ module.exports = {
       '/markDown/':[''],
       '/website/':[''],
       '/browser/':[''],
-      '/knowledge/':['mobileAPP','webpack','other']
+      '/knowledge/':['mobileAPP','webpack','other'],
+      '/typeScript/':[]
     }
   }
 }
