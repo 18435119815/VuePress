@@ -6,9 +6,14 @@
 
 ## 小知识
 
-- -D 开发依赖   信息会被记录到devDependencies中  在开发过程中需要，线上环境不需要的。比如格式校- 验，编码转换这一类的，webpack
+- -D 开发依赖   信息会被记录到devDependencies中  在开发过程中需要，线上环境不需要的。比如格式校验，编码转换这一类的，webpack、jquery
 
-- -S 生产依赖   信息会被记录到dependencies中  在线上环境仍然需要的。比如vue,element-ui
+- -S 生产依赖   信息会被记录到dependencies中  在线上环境仍然需要的。比如vue,element-ui,node-sass (运行完就会转译，所以不需要，一个典型的开发依赖)
+
+- 示例
+    - npm install md5 --save               把md5设置为当前项目的运行依赖
+    - npm install node-sass --save-dev     把node-sass设置为当前项目的开发依赖
+    - npm install node-sass  -g            全局安装  安装到电脑上的某个固定位置 这个位置所处的位置会在node.js被安装的时候自动添加到电脑的全局变量中的path->就可以直接在命令行中执行这个命令了
 
 - 运行webpack打包 npx webpack
 

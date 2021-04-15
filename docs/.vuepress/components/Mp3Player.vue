@@ -3,9 +3,17 @@
     音乐
     <el-switch v-model="isPlay" @change="play"> </el-switch>
     <audio ref="music" loop>
-      <source src='../public/mp3/一人行者.mp3' type="audio/mpeg" ref="mp3"/>
+      <source src="../public/mp3/一人行者.mp3" type="audio/mpeg" ref="mp3" />
       <!-- <source :src="musicPlay" type="audio/mpeg" ref="mp3" /> -->
     </audio>
+    <video
+      ref="testVideo"
+      autoplay="autoplay"
+      style="width: 250px"
+      preload="auto"
+      loop="loop"
+      src="http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4"
+    ></video>
   </div>
 </template>
 

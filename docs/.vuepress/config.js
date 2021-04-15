@@ -44,21 +44,37 @@ module.exports = {
             { text: 'ssr', link: '/vue/ssr/' }
           ] },
           { text: '其他知识', items: [
-            { text: '移动端', link: '/knowledge/mobileAPP/' }
+            { text: '移动端', link: '/knowledge/mobileAPP/' },
+            { text: 'typeScript', link: '/typeScript/' },
+            { text: '日记', link: '/cola/' }
           ] }
+        ]
+      },
+      {
+        text: '其他知识',
+        items: [
+          {
+            text: '相机',link: '/other/camera' 
+          },
+          {
+            text: '面料',link: '/other/fabric' 
+          },
+          {
+            text: '粤语',link: '/other/yueyu' 
+          },
         ]
       }
     ],
     sidebar: {
-      '/JS/':['','Object','Math'],
+      '/JS/':['','Object','Math','ES6'],
       '/foo/':['','one','two'],
-      '/vue/':['','vue-x','interview','sourceCode','ssr','project','vue3'],
+      '/vue/':['vue','vue-x','vue-router','interview','sourceCode','ssr','project','vue3','projectPractice'],
       '/lifeExperience/':[''],
       '/markDown/':[''],
       '/website/':[''],
       '/browser/':[''],
-      '/knowledge/':['mobileAPP','webpack','other'],
-      '/typeScript/':[]
+      '/knowledge/':['littleKnowledge','vscode','mobileAPP','webpack','other'],
+      '/typeScript/':['']
     }
   }
 }

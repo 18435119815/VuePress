@@ -10,5 +10,5 @@ var obj3={say:function(){
   console.log('说话');
 }}
 console.log(Object.assign(obj1,obj2,obj3));     //{name: "张三", age: 18, say: ƒ}
-console.log(obj1,obj2);                         // {name: "张三", age: 18, say: ƒ}   {age: 18}
+console.log(obj1,obj2);                         //{name: "张三", age: 18, say: ƒ}   {age: 18}
 ```
