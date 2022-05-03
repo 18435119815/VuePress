@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3新特性 | Mr哎呦喂的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/VuePress/assets/img/icon1.png">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e2bd54b8015cec977c6f30d0896b8a1b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+    <meta name="description" content="Mr哎呦喂的博客">
+    
+    <link rel="preload" href="/VuePress/assets/css/0.styles.b0c0e9a9.css" as="style"><link rel="preload" href="/VuePress/assets/js/app.77389705.js" as="script"><link rel="preload" href="/VuePress/assets/js/2.f648027b.js" as="script"><link rel="preload" href="/VuePress/assets/js/63.ec63103e.js" as="script"><link rel="prefetch" href="/VuePress/assets/js/10.793af9a8.js"><link rel="prefetch" href="/VuePress/assets/js/11.14501879.js"><link rel="prefetch" href="/VuePress/assets/js/12.351754a2.js"><link rel="prefetch" href="/VuePress/assets/js/13.95d24b2f.js"><link rel="prefetch" href="/VuePress/assets/js/14.d6e28603.js"><link rel="prefetch" href="/VuePress/assets/js/15.2225ee2d.js"><link rel="prefetch" href="/VuePress/assets/js/16.82f3c6bd.js"><link rel="prefetch" href="/VuePress/assets/js/17.4b622f18.js"><link rel="prefetch" href="/VuePress/assets/js/18.b96a1fe9.js"><link rel="prefetch" href="/VuePress/assets/js/19.228fb954.js"><link rel="prefetch" href="/VuePress/assets/js/20.6d7ff204.js"><link rel="prefetch" href="/VuePress/assets/js/21.656b376f.js"><link rel="prefetch" href="/VuePress/assets/js/22.49afd7fc.js"><link rel="prefetch" href="/VuePress/assets/js/23.bf2cdecf.js"><link rel="prefetch" href="/VuePress/assets/js/24.0a71d660.js"><link rel="prefetch" href="/VuePress/assets/js/25.75e0ca4d.js"><link rel="prefetch" href="/VuePress/assets/js/26.14f4af4c.js"><link rel="prefetch" href="/VuePress/assets/js/27.43604d43.js"><link rel="prefetch" href="/VuePress/assets/js/28.0a4d129f.js"><link rel="prefetch" href="/VuePress/assets/js/29.c0dd3ae1.js"><link rel="prefetch" href="/VuePress/assets/js/3.def8e99c.js"><link rel="prefetch" href="/VuePress/assets/js/30.0f8ecc54.js"><link rel="prefetch" href="/VuePress/assets/js/31.15690ab4.js"><link rel="prefetch" href="/VuePress/assets/js/32.ce773f62.js"><link rel="prefetch" href="/VuePress/assets/js/33.1b7f11cf.js"><link rel="prefetch" href="/VuePress/assets/js/34.fce1b4f7.js"><link rel="prefetch" href="/VuePress/assets/js/35.52b59a1f.js"><link rel="prefetch" href="/VuePress/assets/js/36.4a1d4029.js"><link rel="prefetch" href="/VuePress/assets/js/37.3c6259ac.js"><link rel="prefetch" href="/VuePress/assets/js/38.b5fd8538.js"><link rel="prefetch" href="/VuePress/assets/js/39.43c9d4af.js"><link rel="prefetch" href="/VuePress/assets/js/4.a52fbc5c.js"><link rel="prefetch" href="/VuePress/assets/js/40.27954725.js"><link rel="prefetch" href="/VuePress/assets/js/41.b1e9fd7b.js"><link rel="prefetch" href="/VuePress/assets/js/42.231df8d4.js"><link rel="prefetch" href="/VuePress/assets/js/43.e4e36fb2.js"><link rel="prefetch" href="/VuePress/assets/js/44.960de7be.js"><link rel="prefetch" href="/VuePress/assets/js/45.d7703da7.js"><link rel="prefetch" href="/VuePress/assets/js/46.99da218d.js"><link rel="prefetch" href="/VuePress/assets/js/47.289386a6.js"><link rel="prefetch" href="/VuePress/assets/js/48.79e75876.js"><link rel="prefetch" href="/VuePress/assets/js/49.08fbbd56.js"><link rel="prefetch" href="/VuePress/assets/js/5.255f36ee.js"><link rel="prefetch" href="/VuePress/assets/js/50.cd3d7654.js"><link rel="prefetch" href="/VuePress/assets/js/51.3311bc9b.js"><link rel="prefetch" href="/VuePress/assets/js/52.7bd3bed3.js"><link rel="prefetch" href="/VuePress/assets/js/53.91e0dc2f.js"><link rel="prefetch" href="/VuePress/assets/js/54.2ee22880.js"><link rel="prefetch" href="/VuePress/assets/js/55.629dc3cf.js"><link rel="prefetch" href="/VuePress/assets/js/56.3f64904f.js"><link rel="prefetch" href="/VuePress/assets/js/57.00227383.js"><link rel="prefetch" href="/VuePress/assets/js/58.dccf5e58.js"><link rel="prefetch" href="/VuePress/assets/js/59.eb5f8e58.js"><link rel="prefetch" href="/VuePress/assets/js/6.c418f1b4.js"><link rel="prefetch" href="/VuePress/assets/js/60.5a7df88a.js"><link rel="prefetch" href="/VuePress/assets/js/61.5584fadb.js"><link rel="prefetch" href="/VuePress/assets/js/62.29dad797.js"><link rel="prefetch" href="/VuePress/assets/js/64.846b515b.js"><link rel="prefetch" href="/VuePress/assets/js/7.92dbcd87.js"><link rel="prefetch" href="/VuePress/assets/js/8.55b43f35.js"><link rel="prefetch" href="/VuePress/assets/js/9.fb8ea612.js">
+    <link rel="stylesheet" href="/VuePress/assets/css/0.styles.b0c0e9a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/VuePress/" class="home-link router-link-active"><img src="/VuePress/assets/img/hero.png" alt="Mr哎呦喂的博客" class="logo"> <span class="site-name can-hide">Mr哎呦喂的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/VuePress/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/VuePress/myself/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="/VuePress/lifeExperience/" class="nav-link">
+  人生心得
+</a></div><div class="nav-item"><a href="/VuePress/website/" class="nav-link">
+  网址导航
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术文档" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术文档" class="mobile-dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          JS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/JS/" class="nav-link">
+  基础使用
+</a></li><li class="dropdown-subitem"><a href="/VuePress/browser/" class="nav-link">
+  浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/vue/" class="nav-link router-link-active">
+  基础知识
+</a></li><li class="dropdown-subitem"><a href="/VuePress/vue/ssr/" class="nav-link">
+  ssr
+</a></li></ul></li><li class="dropdown-item"><h4>
+          面试题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/interview/interviewText.html" class="nav-link">
+  理论面试题
+</a></li><li class="dropdown-subitem"><a href="/VuePress/interview/interviewMath.html" class="nav-link">
+  实战面试题
+</a></li><li class="dropdown-subitem"><a href="/VuePress/interview/project.html" class="nav-link">
+  项目细节
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/knowledge/mobileAPP/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-subitem"><a href="/VuePress/knowledge/typeScript/" class="nav-link">
+  typeScript
+</a></li><li class="dropdown-subitem"><a href="/VuePress/knowledge/other/" class="nav-link">
+  其他常用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他知识" class="dropdown-title"><span class="title">其他知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他知识" class="mobile-dropdown-title"><span class="title">其他知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/VuePress/other/camera.html" class="nav-link">
+  相机
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/fabric.html" class="nav-link">
+  面料
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/fund.html" class="nav-link">
+  股票
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/yueyu.html" class="nav-link">
+  粤语
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/Interface.html" class="nav-link">
+  接口
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/VuePress/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/VuePress/myself/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="/VuePress/lifeExperience/" class="nav-link">
+  人生心得
+</a></div><div class="nav-item"><a href="/VuePress/website/" class="nav-link">
+  网址导航
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术文档" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术文档" class="mobile-dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          JS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/JS/" class="nav-link">
+  基础使用
+</a></li><li class="dropdown-subitem"><a href="/VuePress/browser/" class="nav-link">
+  浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/vue/" class="nav-link router-link-active">
+  基础知识
+</a></li><li class="dropdown-subitem"><a href="/VuePress/vue/ssr/" class="nav-link">
+  ssr
+</a></li></ul></li><li class="dropdown-item"><h4>
+          面试题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/interview/interviewText.html" class="nav-link">
+  理论面试题
+</a></li><li class="dropdown-subitem"><a href="/VuePress/interview/interviewMath.html" class="nav-link">
+  实战面试题
+</a></li><li class="dropdown-subitem"><a href="/VuePress/interview/project.html" class="nav-link">
+  项目细节
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/knowledge/mobileAPP/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-subitem"><a href="/VuePress/knowledge/typeScript/" class="nav-link">
+  typeScript
+</a></li><li class="dropdown-subitem"><a href="/VuePress/knowledge/other/" class="nav-link">
+  其他常用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他知识" class="dropdown-title"><span class="title">其他知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他知识" class="mobile-dropdown-title"><span class="title">其他知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/VuePress/other/camera.html" class="nav-link">
+  相机
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/fabric.html" class="nav-link">
+  面料
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/fund.html" class="nav-link">
+  股票
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/yueyu.html" class="nav-link">
+  粤语
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/Interface.html" class="nav-link">
+  接口
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/VuePress/vue/vue.html" class="sidebar-link">vue2</a></li><li><a href="/VuePress/vue/vue-x.html" class="sidebar-link">vue-x</a></li><li><a href="/VuePress/vue/vue-router.html" class="sidebar-link">vue路由</a></li><li><a href="/VuePress/vue/sourceCode.html" class="sidebar-link">源码</a></li><li><a href="/VuePress/vue/ssr.html" class="sidebar-link">SSR</a></li><li><a href="/VuePress/vue/project.html" class="sidebar-link">从零开始创建一个vue项目</a></li><li><a href="/VuePress/vue/vue3.html" aria-current="page" class="active sidebar-link">vue3新特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/VuePress/vue/vue3.html#vue3新特性" class="sidebar-link">vue3新特性</a></li><li class="sidebar-sub-header"><a href="/VuePress/vue/vue3.html#项目搭建" class="sidebar-link">项目搭建</a></li><li class="sidebar-sub-header"><a href="/VuePress/vue/vue3.html#基础知识" class="sidebar-link">基础知识</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/VuePress/vue/vue3.html#数据劫持的实现" class="sidebar-link">数据劫持的实现</a></li><li class="sidebar-sub-header"><a href="/VuePress/vue/vue3.html#ref和setup函数" class="sidebar-link">ref和setup函数</a></li><li class="sidebar-sub-header"><a href="/VuePress/vue/vue3.html#reactive和torefs" class="sidebar-link">reactive和toRefs</a></li><li class="sidebar-sub-header"><a href="/VuePress/vue/vue3.html#如何选择-ref-和-reactive" class="sidebar-link">如何选择 Ref()和 reactive()</a></li><li class="sidebar-sub-header"><a href="/VuePress/vue/vue3.html#生命周期和钩子函数" class="sidebar-link">生命周期和钩子函数</a></li><li class="sidebar-sub-header"><a href="/VuePress/vue/vue3.html#功能独立模块化" class="sidebar-link">功能独立模块化</a></li></ul></li></ul></li><li><a href="/VuePress/vue/vite.html" class="sidebar-link">Vite</a></li><li><a href="/VuePress/vue/projectPractice.html" class="sidebar-link">项目实践</a></li><li><a href="/VuePress/vue/uniapp.html" class="sidebar-link">使用uniapp开发微信小程序</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="vue3新特性"><a href="#vue3新特性" class="header-anchor">#</a> vue3新特性</h2> <ul><li>采用渐进式开发，向下兼容（Vue3 支持大多数 Vue2 的特性）</li> <li>各方面性能的提升
+<ol><li>打包体积缩小41%</li> <li>初次渲染快55%</li> <li>更新快133%</li> <li>内存使用减少54%</li></ol></li> <li>Composition API（解决复杂组件的阅读和复用问题）</li> <li>Teleport(瞬移组件)、Suspense(解决异步加载组件问题)和全局 API 的修改和优化</li> <li>更好TypeScript支持</li> <li>使用Proxy代替defineproperty实现数据响应式</li></ul> <h2 id="项目搭建"><a href="#项目搭建" class="header-anchor">#</a> 项目搭建</h2> <ol><li>vue create 项目名称(或者vue ui打开图形构建工具，依次操作)</li> <li>选择配置项-&gt;手动选择-&gt;根据需求空格选中</li> <li>选择项目所使用的vue版本(3.x)</li> <li>是否需要使用class-style</li> <li>是否需要使用TypeScript和Babel的形式编译 JSX</li> <li>ESLint配置（选第一项就好）</li> <li>选择增加lint的特性功能</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>? Pick additional lint features: (Press &lt;space&gt; to select, &lt;a&gt; to toggle all, &lt;i&gt; to invert selection)
+&gt;(*) Lint on save         //保存的时候进行Lint
+ ( ) Lint and fix on commit   //需要帮你进行fix（修理），这项我们不进行选择
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="8"><li>选择这些配置文件时单独存放，还是直接存放在package.json文件里。这里选择放在单独的文件里</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="9"><li>是否需要将此次配置保存下来，方便下次使用</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>Save this as a preset for future projects? (y/N)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="10"><li>如果你同时安装了npm和yarn来个包管理软件，它还会作最后一次询问，让你选择使用什么进行下载。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>? Pick the package manager to use when installing dependencies:
+&gt; Use Yarn
+  Use NPM
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="基础知识"><a href="#基础知识" class="header-anchor">#</a> 基础知识</h2> <h3 id="数据劫持的实现"><a href="#数据劫持的实现" class="header-anchor">#</a> 数据劫持的实现</h3> <h4 id="proxy代理和reflect反射对象"><a href="#proxy代理和reflect反射对象" class="header-anchor">#</a> <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy" target="_blank" rel="noopener noreferrer">Proxy代理<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>和Reflect反射对象</h4> <blockquote><p>Proxy对象用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如属性查找、赋值、枚举、函数调用等）</p></blockquote> <p><strong>语法</strong><br> <code>const p = new Proxy(target, handler)</code><br> <strong>示例</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>      var obj = {
+          name:'任俊峰',
+          age:25,
+          wife:{
+              name:'范彩乐',
+              age:19
+          }
+      }
+
+      //target代理对象  prop代理对象的属性
+      const newObj = new Proxy(obj,{
+          get(target,prop){
+              console.log('get')
+              return Reflect.get(target,prop)
+          },
+          set(target,prop,val){
+              console.log('set')
+              return Reflect.set(target,prop,val)
+          },
+          deleteProperty(target,prop){
+              console.log('delete')
+              return Reflect.deleteProperty(target,prop)
+          }
+      })
+
+      newObj.name;                        //get
+      newObj.name = '哎呦喂';              //set
+      console.log(obj)                    //{name: &quot;哎呦喂&quot;, age: 25, wife: {…}}
+
+      delete newObj.age;                  //delete
+      console.log(obj)                    //{name: &quot;哎呦喂&quot;, wife: {…}}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h3 id="ref和setup函数"><a href="#ref和setup函数" class="header-anchor">#</a> ref和setup函数</h3> <ul><li>项目中需要在template中使用的变量，都需要使用ref函数处理</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const name = ref('哎呦喂')
+const arr =  ref([&quot;乐乐&quot;, &quot;菁菁&quot;, &quot;菲菲&quot;]);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>data和methods属性中的变量方法全都写在setup函数中</li> <li>return出去的数据和方法，在模板中才可以使用，这样可以精准的控制暴漏的变量和方法<br>
+下面实现一个简单的功能，初步感受一下（点击按钮选择一个女孩成为自己的妻子）</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;p&gt;请选择一个女孩成为你的妻子&lt;/p&gt;
+    &lt;button
+      v-for=&quot;(item, index) in girls&quot;
+      :key=&quot;index&quot;
+      @click=&quot;selectGirlFun(index)&quot;
+    &gt;
+      {{ item }}
+    &lt;/button&gt;
+
+    &lt;p&gt;现在{{ selectGirl }}已经是你的妻子了，希望你们可以一直幸福的走下去&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script lang=&quot;ts&quot;&gt;
+import { defineComponent, ref } from &quot;vue&quot;;
+
+export default defineComponent({
+  name: &quot;App&quot;,
+  setup() {
+    const girls = ref([&quot;乐乐&quot;, &quot;菁菁&quot;, &quot;菲菲&quot;]);
+    const selectGirl = ref(&quot;&quot;);
+    const selectGirlFun = (index: number) =&gt; {
+      selectGirl.value = girls.value[index];    //被ref处理过的值，赋值和取值都需要.value，暂时理解为之前的this.变成了.value
+    };
+    return {
+      girls,
+      selectGirl,
+      selectGirlFun,
+    };
+  },
+});
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h3 id="reactive和torefs"><a href="#reactive和torefs" class="header-anchor">#</a> reactive和toRefs</h3> <p>如果感觉上面的那种方式麻烦又陌生的话，可以试试reactive函数，会有vue2的感觉<br>
+直接上实例</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//引入reactive
+import { defineComponent, ref, reactive } from &quot;vue&quot;;
+
+//setup中
+ setup() {
+    const data = reactive({       //用reactive包裹要用到的变量和方法,类似于之前vue2的data了
+      girls: ref([&quot;乐乐&quot;, &quot;菁菁&quot;, &quot;菲菲&quot;]),
+      selectGirl: ref(&quot;&quot;),
+      selectGirlFun: (index: number) =&gt; {
+        data.selectGirl = data.girls[index];  //此处不再需要.value，而是data.  html中的引用也需要变成data.
+      },
+    });
+
+    return{data}                  //直接return一个data就好了
+  },
+
+//html中的引用加上data.前缀
+&lt;button
+  v-for=&quot;(item, index) in data.girls&quot;
+  :key=&quot;index&quot;
+  @click=&quot;data.selectGirlFun(index)&quot;
+&gt;
+  {{ item }}
+&lt;/button&gt;
+
+&lt;p&gt;现在{{ data.selectGirl }}已经是你的妻子了，希望你们可以一直幸福的走下去&lt;/p&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>上面这个示例还有一个严重的缺陷就是html中变量的引用不再像之前那么方便了，其实也有解决办法，那就是toRefs</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//导入
+import {  ref, reactive, toRefs } from &quot;vue&quot;;
+
+//将data用toRefs处理
+const dataRefs = toRefs(data)
+//结构导出
+return{...dataRefs}
+//这样html模版中就不需要加变量前缀了，可以直接使用girls  selectGirl  selectGirlFun
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="如何选择-ref-和-reactive"><a href="#如何选择-ref-和-reactive" class="header-anchor">#</a> 如何选择 Ref()和 reactive()</h3> <p>网络上对这两个方法的争论还是不少的，但到目前为止，还没有什么实质性的理论到底是用Ref()好，还是reactive()好，也就是两种方法都可以。他们的作用都是生成响应式对象，目前来看只是编写上有所不同。</p> <h3 id="生命周期和钩子函数"><a href="#生命周期和钩子函数" class="header-anchor">#</a> 生命周期和钩子函数</h3> <ul><li>setup() :开始创建组件之前，在beforeCreate和created之前执行。创建的是data和method</li> <li>onBeforeMount() : 组件挂载到节点上之前执行的函数。</li> <li>onMounted() : 组件挂载完成后执行的函数。</li> <li>onBeforeUpdate(): 组件更新之前执行的函数。</li> <li>onUpdated(): 组件更新完成之后执行的函数。</li> <li>onBeforeUnmount(): 组件卸载之前执行的函数。</li> <li>onUnmounted(): 组件卸载完成后执行的函数</li> <li>onActivated(): 被包含在keep-alive中的组件，会多出两个生命周期钩子函数。被激活时执行。</li> <li>onDeactivated(): 比如从 A 组件，切换到 B 组件，A 组件消失时执行。</li> <li>onErrorCaptured(): 当捕获一个来自子孙组件的异常时激活钩子函数</li></ul> <p><strong>注意</strong></p> <ul><li>vue3中依旧可以使用vue2中的钩子函数，而且不必单独引入，也不必写在setup函数中，vue3自己的钩子函数必须单独引入</li> <li>vue3中的钩子函数会比与之相对应的vue2钩子函数先调用(比如onCreated会比created先调用)</li> <li>setup 这个函数是在beforeCreate和created之前运行的,所以你可以用它来代替这两个钩子函数。</li> <li>vue2和vue3的钩子函数可以混用，但是最好不要</li></ul> <h4 id="onrendertracked-和-onrendertriggered"><a href="#onrendertracked-和-onrendertriggered" class="header-anchor">#</a> onRenderTracked()和 onRenderTriggered()</h4> <ol><li><p>onRenderTracked 状态跟踪<br>
+它会跟踪页面上所有响应式变量和方法的状态，也就是我们用return返回去的值，他都会跟踪。只要页面有update的情况，他就会跟踪，然后生成一个event对象</p></li> <li><p>onRenderTriggered状态触发<br>
+它不会跟踪每一个值，而是给你变化值的信息，并且新值和旧值都会给你明确的展示出来。</p></li> <li><p>对 event 对象属性的详细介绍：</p></li></ol> <ul><li>key 哪个变量发生了变化</li> <li>newValue 更新后变量的值</li> <li>oldValue 更新前变量的值</li> <li>target 目前页面中的响应变量和函数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { onRenderTracked ,onRenderTriggered,} from &quot;vue&quot;;
+
+setup(){
+  onRenderTracked((event) =&gt; {
+    console.log(&quot;状态跟踪组件-----------&gt;&quot;);
+    console.log(event);
+  })
+
+  onRenderTriggered((event) =&gt; {
+    console.log(&quot;状态触发组件---------------&gt;&quot;);
+    console.log(event);
+  });
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="功能独立模块化"><a href="#功能独立模块化" class="header-anchor">#</a> 功能独立模块化</h3> <p>有些功能我们可能很多地方都会用到，类似于之前的组件，在vue3中我们是这样使用的（示例：点击显示当前时间功能）</p> <ul><li>在src/hooks文件夹下新建useNowTime文件夹</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>//引入ref
+import {  ref } from &quot;vue&quot;;
+
+//功能逻辑
+const nowTime = ref('00:00:00')
+const getNowTime = ()=&gt;{
+  const time = new Date();
+  const hour = time.getHours()&lt;10?`0+${time.getHours()}`:time.getHours();
+  const min = time.getMinutes()&lt;10?`0+${time.getMinutes()}`:time.getMinutes();
+  const sec = time.getSeconds()&lt;10?`0+${time.getSeconds()}`:time.getSeconds();
+  nowTime.value = hour+':'+min+':'+sec;
+  setTimeout(getNowTime,1000)
+}
+
+//导出
+export {
+    nowTime,
+    getNowTime
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><ul><li>在需要用到的vue文件中</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>//引入变量和方法
+import {nowTime,getNowTime} from './hooks/useNowTime'
+
+export default {
+  name: &quot;App&quot;,
+  setup() {
+    //一定记得return出去
+    return{
+      nowTime,
+      getNowTime
+    }
+  },
+};
+
+//然后就可以在template中使用啦
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/VuePress/vue/project.html" class="prev">
+        从零开始创建一个vue项目
+      </a></span> <span class="next"><a href="/VuePress/vue/vite.html">
+        Vite
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/VuePress/assets/js/app.77389705.js" defer></script><script src="/VuePress/assets/js/2.f648027b.js" defer></script><script src="/VuePress/assets/js/63.ec63103e.js" defer></script>
+  </body>
+</html>

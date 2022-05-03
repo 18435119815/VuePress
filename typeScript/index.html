@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>typeScript | Mr哎呦喂的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/VuePress/assets/img/icon1.png">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e2bd54b8015cec977c6f30d0896b8a1b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+    <meta name="description" content="Mr哎呦喂的博客">
+    
+    <link rel="preload" href="/VuePress/assets/css/0.styles.b0c0e9a9.css" as="style"><link rel="preload" href="/VuePress/assets/js/app.77389705.js" as="script"><link rel="preload" href="/VuePress/assets/js/2.f648027b.js" as="script"><link rel="preload" href="/VuePress/assets/js/52.7bd3bed3.js" as="script"><link rel="prefetch" href="/VuePress/assets/js/10.793af9a8.js"><link rel="prefetch" href="/VuePress/assets/js/11.14501879.js"><link rel="prefetch" href="/VuePress/assets/js/12.351754a2.js"><link rel="prefetch" href="/VuePress/assets/js/13.95d24b2f.js"><link rel="prefetch" href="/VuePress/assets/js/14.d6e28603.js"><link rel="prefetch" href="/VuePress/assets/js/15.2225ee2d.js"><link rel="prefetch" href="/VuePress/assets/js/16.82f3c6bd.js"><link rel="prefetch" href="/VuePress/assets/js/17.4b622f18.js"><link rel="prefetch" href="/VuePress/assets/js/18.b96a1fe9.js"><link rel="prefetch" href="/VuePress/assets/js/19.228fb954.js"><link rel="prefetch" href="/VuePress/assets/js/20.6d7ff204.js"><link rel="prefetch" href="/VuePress/assets/js/21.656b376f.js"><link rel="prefetch" href="/VuePress/assets/js/22.49afd7fc.js"><link rel="prefetch" href="/VuePress/assets/js/23.bf2cdecf.js"><link rel="prefetch" href="/VuePress/assets/js/24.0a71d660.js"><link rel="prefetch" href="/VuePress/assets/js/25.75e0ca4d.js"><link rel="prefetch" href="/VuePress/assets/js/26.14f4af4c.js"><link rel="prefetch" href="/VuePress/assets/js/27.43604d43.js"><link rel="prefetch" href="/VuePress/assets/js/28.0a4d129f.js"><link rel="prefetch" href="/VuePress/assets/js/29.c0dd3ae1.js"><link rel="prefetch" href="/VuePress/assets/js/3.def8e99c.js"><link rel="prefetch" href="/VuePress/assets/js/30.0f8ecc54.js"><link rel="prefetch" href="/VuePress/assets/js/31.15690ab4.js"><link rel="prefetch" href="/VuePress/assets/js/32.ce773f62.js"><link rel="prefetch" href="/VuePress/assets/js/33.1b7f11cf.js"><link rel="prefetch" href="/VuePress/assets/js/34.fce1b4f7.js"><link rel="prefetch" href="/VuePress/assets/js/35.52b59a1f.js"><link rel="prefetch" href="/VuePress/assets/js/36.4a1d4029.js"><link rel="prefetch" href="/VuePress/assets/js/37.3c6259ac.js"><link rel="prefetch" href="/VuePress/assets/js/38.b5fd8538.js"><link rel="prefetch" href="/VuePress/assets/js/39.43c9d4af.js"><link rel="prefetch" href="/VuePress/assets/js/4.a52fbc5c.js"><link rel="prefetch" href="/VuePress/assets/js/40.27954725.js"><link rel="prefetch" href="/VuePress/assets/js/41.b1e9fd7b.js"><link rel="prefetch" href="/VuePress/assets/js/42.231df8d4.js"><link rel="prefetch" href="/VuePress/assets/js/43.e4e36fb2.js"><link rel="prefetch" href="/VuePress/assets/js/44.960de7be.js"><link rel="prefetch" href="/VuePress/assets/js/45.d7703da7.js"><link rel="prefetch" href="/VuePress/assets/js/46.99da218d.js"><link rel="prefetch" href="/VuePress/assets/js/47.289386a6.js"><link rel="prefetch" href="/VuePress/assets/js/48.79e75876.js"><link rel="prefetch" href="/VuePress/assets/js/49.08fbbd56.js"><link rel="prefetch" href="/VuePress/assets/js/5.255f36ee.js"><link rel="prefetch" href="/VuePress/assets/js/50.cd3d7654.js"><link rel="prefetch" href="/VuePress/assets/js/51.3311bc9b.js"><link rel="prefetch" href="/VuePress/assets/js/53.91e0dc2f.js"><link rel="prefetch" href="/VuePress/assets/js/54.2ee22880.js"><link rel="prefetch" href="/VuePress/assets/js/55.629dc3cf.js"><link rel="prefetch" href="/VuePress/assets/js/56.3f64904f.js"><link rel="prefetch" href="/VuePress/assets/js/57.00227383.js"><link rel="prefetch" href="/VuePress/assets/js/58.dccf5e58.js"><link rel="prefetch" href="/VuePress/assets/js/59.eb5f8e58.js"><link rel="prefetch" href="/VuePress/assets/js/6.c418f1b4.js"><link rel="prefetch" href="/VuePress/assets/js/60.5a7df88a.js"><link rel="prefetch" href="/VuePress/assets/js/61.5584fadb.js"><link rel="prefetch" href="/VuePress/assets/js/62.29dad797.js"><link rel="prefetch" href="/VuePress/assets/js/63.ec63103e.js"><link rel="prefetch" href="/VuePress/assets/js/64.846b515b.js"><link rel="prefetch" href="/VuePress/assets/js/7.92dbcd87.js"><link rel="prefetch" href="/VuePress/assets/js/8.55b43f35.js"><link rel="prefetch" href="/VuePress/assets/js/9.fb8ea612.js">
+    <link rel="stylesheet" href="/VuePress/assets/css/0.styles.b0c0e9a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/VuePress/" class="home-link router-link-active"><img src="/VuePress/assets/img/hero.png" alt="Mr哎呦喂的博客" class="logo"> <span class="site-name can-hide">Mr哎呦喂的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/VuePress/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/VuePress/myself/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="/VuePress/lifeExperience/" class="nav-link">
+  人生心得
+</a></div><div class="nav-item"><a href="/VuePress/website/" class="nav-link">
+  网址导航
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术文档" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术文档" class="mobile-dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          JS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/JS/" class="nav-link">
+  基础使用
+</a></li><li class="dropdown-subitem"><a href="/VuePress/browser/" class="nav-link">
+  浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/vue/" class="nav-link">
+  基础知识
+</a></li><li class="dropdown-subitem"><a href="/VuePress/vue/ssr/" class="nav-link">
+  ssr
+</a></li></ul></li><li class="dropdown-item"><h4>
+          面试题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/interview/interviewText.html" class="nav-link">
+  理论面试题
+</a></li><li class="dropdown-subitem"><a href="/VuePress/interview/interviewMath.html" class="nav-link">
+  实战面试题
+</a></li><li class="dropdown-subitem"><a href="/VuePress/interview/project.html" class="nav-link">
+  项目细节
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/knowledge/mobileAPP/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-subitem"><a href="/VuePress/knowledge/typeScript/" class="nav-link">
+  typeScript
+</a></li><li class="dropdown-subitem"><a href="/VuePress/knowledge/other/" class="nav-link">
+  其他常用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他知识" class="dropdown-title"><span class="title">其他知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他知识" class="mobile-dropdown-title"><span class="title">其他知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/VuePress/other/camera.html" class="nav-link">
+  相机
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/fabric.html" class="nav-link">
+  面料
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/fund.html" class="nav-link">
+  股票
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/yueyu.html" class="nav-link">
+  粤语
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/Interface.html" class="nav-link">
+  接口
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/VuePress/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/VuePress/myself/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="/VuePress/lifeExperience/" class="nav-link">
+  人生心得
+</a></div><div class="nav-item"><a href="/VuePress/website/" class="nav-link">
+  网址导航
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术文档" class="dropdown-title"><span class="title">技术文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术文档" class="mobile-dropdown-title"><span class="title">技术文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          JS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/JS/" class="nav-link">
+  基础使用
+</a></li><li class="dropdown-subitem"><a href="/VuePress/browser/" class="nav-link">
+  浏览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/vue/" class="nav-link">
+  基础知识
+</a></li><li class="dropdown-subitem"><a href="/VuePress/vue/ssr/" class="nav-link">
+  ssr
+</a></li></ul></li><li class="dropdown-item"><h4>
+          面试题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/interview/interviewText.html" class="nav-link">
+  理论面试题
+</a></li><li class="dropdown-subitem"><a href="/VuePress/interview/interviewMath.html" class="nav-link">
+  实战面试题
+</a></li><li class="dropdown-subitem"><a href="/VuePress/interview/project.html" class="nav-link">
+  项目细节
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/VuePress/knowledge/mobileAPP/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-subitem"><a href="/VuePress/knowledge/typeScript/" class="nav-link">
+  typeScript
+</a></li><li class="dropdown-subitem"><a href="/VuePress/knowledge/other/" class="nav-link">
+  其他常用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他知识" class="dropdown-title"><span class="title">其他知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他知识" class="mobile-dropdown-title"><span class="title">其他知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/VuePress/other/camera.html" class="nav-link">
+  相机
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/fabric.html" class="nav-link">
+  面料
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/fund.html" class="nav-link">
+  股票
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/yueyu.html" class="nav-link">
+  粤语
+</a></li><li class="dropdown-item"><!----> <a href="/VuePress/other/Interface.html" class="nav-link">
+  接口
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/VuePress/typeScript/" aria-current="page" class="active sidebar-link">typeScript</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#概念" class="sidebar-link">概念</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#javascript-与-typescript-的区别" class="sidebar-link">JavaScript 与 TypeScript 的区别</a></li></ul></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#调试环境" class="sidebar-link">调试环境</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#基本语法" class="sidebar-link">基本语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_1-类型注解" class="sidebar-link">1.  类型注解</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_2-类型推论" class="sidebar-link">2.  类型推论</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_3-多种类型" class="sidebar-link">3.  多种类型</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_4-任意类型" class="sidebar-link">4.  任意类型</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_5-类型数组" class="sidebar-link">5.  类型数组</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_6-函数返回类型约束" class="sidebar-link">6.  函数返回类型约束</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_7-对象参数属性值约束" class="sidebar-link">7.  对象参数属性值约束</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_8-类型断言" class="sidebar-link">8.  类型断言</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_9-联合类型" class="sidebar-link">9.  联合类型</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_10-交叉类型" class="sidebar-link">10. 交叉类型</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_11-函数" class="sidebar-link">11. 函数</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_12-函数重载" class="sidebar-link">12. 函数重载</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_13-class类的特性" class="sidebar-link">13. class类的特性</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_14-interface接口" class="sidebar-link">14. interface接口</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_15-泛型" class="sidebar-link">15. 泛型</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#_16-枚举-enum" class="sidebar-link">16. 枚举 (Enum)</a></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#namespace命名空间" class="sidebar-link">namespace命名空间</a></li></ul></li><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#tsconfig-json" class="sidebar-link">tsconfig.json</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/VuePress/typeScript/#compileroptions" class="sidebar-link">compilerOptions</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="typescript"><a href="#typescript" class="header-anchor">#</a> typeScript</h1> <h2 id="概念"><a href="#概念" class="header-anchor">#</a> 概念</h2> <h3 id="javascript-与-typescript-的区别"><a href="#javascript-与-typescript-的区别" class="header-anchor">#</a> JavaScript 与 TypeScript 的区别</h3> <ul><li><p>TypeScript 是 JavaScript 的超集，扩展了 JavaScript 的语法，因此现有的 JavaScript 代码可与 TypeScript 一起工作无需任何修改，TypeScript 通过类型注解提供编译时的静态类型检查。</p></li> <li><p>TypeScript 可处理已有的 JavaScript 代码，并只对其中的 TypeScript 代码进行编译。
+<img src="/assets/img/ts1.jpg" width="200" height="auto" align="middle"> <img src="/assets/img/ts2.jpg" width="200" height="auto" align="middle"></p></li></ul> <h2 id="调试环境"><a href="#调试环境" class="header-anchor">#</a> 调试环境</h2> <ul><li><p>安装<br> <code>npm install typeScript -g</code></p></li> <li><p>配置文件<br> <code>tsc --init</code>   输入完成后，就会出现tsconfig.json文件( typescript 的编译配置文件)，想要此文件生效的话编译时直接运行<code>tsc</code>命令<br> <code>npm init</code></p></li> <li><p>在现有的vue项目中加入ts<br> <code>vue add @vue/typescript</code><br>
+之后会出现一些选项，第一项yes，其余No即可
+安装完成之后会发现文件夹里多了一些文件，<br>
+打开<code>main.ts</code>会发现多了一些红色波浪线
+<img src="/assets/img/tsError.jpg" width="700" height="auto" align="middle">
+打开<code>ts.config.json</code><br>
+加入<code>&quot;noImplicitAny&quot;:false</code>即可<br> <img src="/assets/img/tsError1.jpg" width="300" height="auto" align="middle"></p></li></ul> <h2 id="基本语法"><a href="#基本语法" class="header-anchor">#</a> 基本语法</h2> <blockquote><p>typeScript的静态类型分为两种：基础静态类型和对象静态类型</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>//基础静态类型 null undefined boolean void symbol
+const num:number = 2;
+const str:string = 'aiyouwei';
+
+//对象静态类型 对象 数组 类 函数
+const obj:{
+    name:string,
+    age:number
+} = {
+    name:'lele',
+    age:20
+}
+
+const arr:string[] = ['lele','jingjing','feifei']
+
+class duixiang{}
+const lele:duixiang = new duixiang()
+
+const wife:()=&gt;string = ()=&gt;{return 'lele'}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="_1-类型注解"><a href="#_1-类型注解" class="header-anchor">#</a> 1.  类型注解</h3> <p>声明的时候直接写好变量类型</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var a:String;
+a = ''
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_2-类型推论"><a href="#_2-类型推论" class="header-anchor">#</a> 2.  类型推论</h3> <p>声明的时候直接赋值，会自动以该值的类型为准</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var b = true;
+b = 2;(报错)
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_3-多种类型"><a href="#_3-多种类型" class="header-anchor">#</a> 3.  多种类型</h3> <p>可以设置两个类型<br> <code>var c : String | undefined;</code></p> <h3 id="_4-任意类型"><a href="#_4-任意类型" class="header-anchor">#</a> 4.  任意类型</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>var d : any;
+d = 1;
+d = 'tom';
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_5-类型数组"><a href="#_5-类型数组" class="header-anchor">#</a> 5.  类型数组</h3> <p>声明数组中的元素类型</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr : String[]
+arr = ['Tom','Jerry']
+//当然也可以用any类型
+var arr1 : any[]
+arr1 = [1,'Tom',true]
+
+//两种类型的写法
+const arr1 : (number|string)[] = [1,2,'lele']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_6-函数返回类型约束"><a href="#_6-函数返回类型约束" class="header-anchor">#</a> 6.  函数返回类型约束</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>//有返回值的
+function add(val : String) : String{
+    return &quot;hey&quot;+val
+}
+
+//没有返回值的  使用void类型
+function reduce(val : String) : void{
+    console.log('无返回值用void类型')
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="_7-对象参数属性值约束"><a href="#_7-对象参数属性值约束" class="header-anchor">#</a> 7.  对象参数属性值约束</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>function test1(obj:{person:String}){}
+test1({person:'string'})
+
+
+//使用type声明一个类型
+//上面的例子也可以这么写  
+type Person = {person:String}
+function test2(obj:Person){}
+test2({person:'string'})
+//再来一个
+type lady = {name:string,age:number}
+const arr : lady[] = [
+    {name:'乐乐',age:19},
+    {name:'静静',age:25}
+]
+
+
+
+
+function add({one,two}:{one:number,two:number}){
+    return one + two 
+}
+const a = add({one:1,two:2})
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="_8-类型断言"><a href="#_8-类型断言" class="header-anchor">#</a> 8.  类型断言</h3> <p>某些情况下用户会比编译器更确定某个变量的具体类型，可用类型断言as</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const someValue: any = &quot;this is a string&quot;; 
+const strLength = (someValue as string).length;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_9-联合类型"><a href="#_9-联合类型" class="header-anchor">#</a> 9.  联合类型</h3> <p>希望某个变量或参数的类型是多种类型其中之一</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let union: string | number; 
+union = '1'; // ok 
+union = 1; // ok
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_10-交叉类型"><a href="#_10-交叉类型" class="header-anchor">#</a> 10. 交叉类型</h3> <p>想要定义某种由多种类型合并而成的类型使用交叉类型</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>type First = {first: number}; 
+type Second = {second: number}; 
+type FirstAndSecond = First &amp; Second; 
+function fn3(param: FirstAndSecond): FirstAndSecond { 
+    return {first:1, second:2} 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_11-函数"><a href="#_11-函数" class="header-anchor">#</a> 11. 函数</h3> <ul><li>必填参：参数一旦声明，就要求传递，且类型需符合</li> <li>可选参：用？来标识参数可选填(没有默认值)</li> <li>参数可以用=添加默认值</li></ul> <h3 id="_12-函数重载"><a href="#_12-函数重载" class="header-anchor">#</a> 12. 函数重载</h3> <p>以参数数量或类型区分多个同名函数(多用于写源码或者框架)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 重载1 
+function watch(cb1: () =&gt; void): void; 
+// 重载2 
+function watch(cb1: () =&gt; void, cb2: (v1: any, v2: any) =&gt; void): void; 
+// 实现 
+function watch(cb1: () =&gt; void, cb2?: (v1: any, v2: any) =&gt; void) { 
+    if (cb1 &amp;&amp; cb2) { c
+    onsole.log('执行watch重载2'); 
+    } else { 
+        console.log('执行watch重载1'); 
+    } 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_13-class类的特性"><a href="#_13-class类的特性" class="header-anchor">#</a> 13. class类的特性</h3> <ul><li>ts中的类和es6中大体相同</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>class Parent { 
+    public  head = 'head';      // 公共属性，可以在 当前类 的内部外部访问
+    private _foo = &quot;foo&quot;;       // 私有属性(一般以下划线开头)，不能在类的外部访问，包括 new出来的对象和继承的子类
+    protected bar = &quot;bar&quot;;      // 保护属性，可以在 当前类的内部 和 继承子类 中访问，new出来的不可以
+    public readonly _eyes = 2;   // 只读属性(一般以下划线开头)，修改会直接报错
+    
+    // 参数属性：构造函数参数加修饰符，能够定义为成员属性  跟写在上面的三个属性的效果相同
+    constructor(public tua = &quot;tua&quot;) {} 
+    
+    // 方法也有修饰符 private someMethod() {} 
+    
+    // 存取器：访问私有属性，可添加额外逻辑，控制读写性 
+    get foo() { return this._foo; }
+    set foo(val) { this._foo = val; } 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>类的继承及super的使用</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>class people{
+    eyes = 2;
+    mouth = 1;
+    nose = 1;
+    eyebrow = 2;
+    say(){
+        return '父类'
+    }
+    static sayLove(){           //如果想要不new对象而直接使用类的属性和方法   则需要用static，这样可以通过people.sayLove()直接访问
+        return 'i love you'
+    }
+}
+
+class man extends people{
+    constructor(){              //子类中如果要写构造函数，则必须用super()调用父类的构造函数，否则报错(父类中不写constructor也是有默认有的)
+        super()
+    }               
+    say(){
+        return 'Im man!I can use'+ super.say() + 'methods'   //super可以调用父类中的方法
+    }
+}
+
+const man1 = new man()
+man1.say()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><ul><li>抽象类
+<ul><li>抽象类的关键词是abstract,里边的抽象方法也是abstract开头的</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>abstract class Girl{
+ abstract skill()   
+}
+
+//继承子类会被要求必须要有skill这个方法
+class Waiter extends Girl{
+    skill(){
+        console.log('您好 我是服务员')
+    }
+}
+
+class BaseTeacher extends Girl{
+    skill(){
+        console.log('您好 我是初级技师')
+    }
+}
+
+class seniorTeacher extends Girl{
+    skill(){
+        console.log('您好 我是高级技师')
+    }
+}
+
+const senior = new seniorTeacher()
+console.log(senior.skill())
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="_14-interface接口"><a href="#_14-interface接口" class="header-anchor">#</a> 14. interface接口</h3> <p>接口仅约束结构，不要求实现，使用更简单</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// Person接口定义了解构 
+interface Person {
+    firstName: string; 
+    lastName: string;
+    lele ?: string;             //可选参数?:
+    [propname:string]:any       //任意键值对propname
+ }
+
+// greeting函数通过Person接口约束参数解构 
+function greeting(person: Person) { 
+    return 'Hello, ' + person.firstName + ' ' + person.lastName; 
+}
+
+greeting({firstName: 'Jane', lastName: 'User'}); // 正确 
+greeting({firstName: 'Jane'}); // 错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>//利用接口来约束类</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>class girl2 implements Person {
+    firstName= '范'; 
+    lastName= '彩乐';
+    lele = '乐乐';     
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>//接口间的继承</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>interface people extends Person {
+  say(): string;        
+}
+
+此时的people不仅有Person的全部属性  还多了一个say方法
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_15-泛型"><a href="#_15-泛型" class="header-anchor">#</a> 15. 泛型</h3> <p>泛型（Generics）是指在定义函数、接口或类的时候，不预先指定具体的类型，而在使用的时候再指定类型的一种特性。以此增加代码通用性。<br>
+泛型的定义使用&lt;&gt;（尖角号）进行定义的。</p> <div class="language- extra-class"><pre><code>1.    比如现在给aiyouwei方法一个泛型，名字就叫做T(大多数情况都用T，自定义语义化也可以)
+```
+function aiyouwei&lt;T&gt;(first:T,second:T){
+    return `${first}${second}`
+}
+//调用函数的时候指定泛型类型
+const name1= aiyouwei&lt;number&gt;(1,1)
+```
+2.  多个泛型的使用
+```
+function aiyouhei&lt;T,P&gt;(first:T,second:P){
+    return `${first}${second}`
+}
+
+const name2= aiyouhei&lt;number,string&gt;(1,'hey')
+//此处这么写也是可以的，反省也有类型推断
+//const name2= aiyouhei(1,'hey')
+```
+
+3.  在类中使用泛型
+```
+//不使用泛型的
+class Girl{
+    constructor(private girl:string[]){}
+    getName(index:number):string{
+        return this.girl[index]
+    }
+}
+
+const girl = new Girl(['乐乐','菁菁','琪琪'])
+
+console.log(girl.getName(2))
+//使用泛型的
+class Girl1&lt;T&gt;{
+    constructor(private girl:T[]){}
+    getName(index:number):T{
+        return this.girl[index]
+    }
+}
+
+const girl1 = new Girl1&lt;string&gt;(['乐乐','菁菁','琪琪'])
+
+console.log(girl1.getName(2))
+```
+
+4.  泛型的继承
+```
+interface geshi{
+    name:string
+}
+
+class Girl1&lt;T extends geshi&gt;{
+    constructor(private girl:T[]){}
+    getName(index:number):string{
+        return this.girl[index].name
+    }
+}
+
+const girl1 = new Girl1([
+    {name:'乐乐'},
+    {name:'菁菁'},
+    {name:'琪琪'}
+])
+
+console.log(girl1.getName(2))
+```
+
+5.  泛型的约束
+```
+class SelectGirl&lt;T extends number | string&gt; {
+    //.....
+}
+```
+
+**泛型优点：**
+- 函数和类可以支持多种类型，更加通用
+- 不必编写多条重载，冗长联合类型，可读性好
+- 灵活控制类型约束
+- 不仅通用且能灵活控制，泛型被广泛用于通用库的编写。
+</code></pre></div><h3 id="_16-枚举-enum"><a href="#_16-枚举-enum" class="header-anchor">#</a> 16. 枚举 (Enum)</h3> <blockquote><p>枚举是基于 0 的，也就是说第一个值是 0，后面的值依次递增。不要担心，当中的每一个值都可以显式指定，只要不出现重复即可，没有被显式指定的值，都会在前一个值的基础上递增。</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>// enum Color { 
+//     Red,
+//     Green, 
+//     Blue 
+// }
+// let c: Color = Color.Green;  // 1
+
+enum Color {
+    Red = 1, 
+    Green, 
+    Blue = 4
+}
+let c: Color = Color.Green;  // 2
+
+枚举有一个很方便的特性，也可以向枚举传递一个数值，然后获取它对应的名称值。(即通过下标获取key值)
+
+let colorName: string = Color[2];  // 'Green'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="namespace命名空间"><a href="#namespace命名空间" class="header-anchor">#</a> namespace命名空间</h3> <p>有时候为了防止全局变量污染，我们需要用到namaspace命名空间。需要使用的可以用export导出，被导出的才会变成全局变量。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>namespace Home{
+    class Header{
+        constructor(){
+        }
+    }
+    
+    class Content{
+        constructor(){
+        }
+    }
+    
+    class Footer{
+        constructor(){
+        }
+    }
+    
+    export class Page{   
+        constructor() {
+            new Header();
+            new Content();
+            new Footer();      
+        }   
+    }
+}
+
+//调用  Home.Page()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p><strong>子命名空间</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>namespace Components {
+  export namespace SubComponents {
+    export class Test {}
+  }
+
+  //someting ...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="tsconfig-json"><a href="#tsconfig-json" class="header-anchor">#</a> tsconfig.json</h2> <p>新建文件夹，进入vscode服务台，运行<code>tsc --init</code>就会发现多了一个<code>tsconfig.json</code>的文件，这是ts的编译配置文件，用来配置如何对ts文件进行编译的。</p> <p><strong>详情查阅</strong><br> <a href="https://www.tslang.cn/docs/handbook/compiler-options.html" target="_blank" rel="noopener noreferrer">编译选项详解<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><strong>注意事项</strong></p> <ol><li>配置文件不支持单引号，所以里边都要使用双引号</li> <li><code>ts-node</code>命令也遵循<code>tsconfig.json</code>配置</li></ol> <p><strong>编译单个ts文件</strong><br> <code>tsc demo.ts</code>
+需要注意的是使用这个命令tsconfig.json配置是不生效的,此时需要运行<code>tsc</code>才可以。但是这么做会将所有的ts文件都进行编译。如果我们只想编译单个ts文件该怎么做呢(假设此时目录中有demo.ts、other.ts，我们想编译的是demo.ts)</p> <ol><li>include(包含)</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>    &quot;include&quot;:[&quot;demo.ts&quot;]`
+    &quot;compilerOptions&quot;: {
+        //........
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="2"><li>exclude(不包含)</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>    &quot;exclude&quot;:[&quot;other.ts&quot;]`
+    &quot;compilerOptions&quot;: {
+        //........
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="3"><li>files(同include)</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>    &quot;files&quot;:[&quot;demo.ts&quot;]`
+    &quot;compilerOptions&quot;: {
+        //........
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="compileroptions"><a href="#compileroptions" class="header-anchor">#</a> compilerOptions</h3> <p>它是告诉TypeScript具体如何编译成js文件的，里边的配置项非常多</p> <p><strong>removeComments</strong><br>
+告诉TypeScript编译出来的文件是否显示注。true为不显示。</p> <p><strong>strict</strong><br>
+我们的编译和书写规范，是否要按照TypeScript最严格的规范来写。true就是要。</p> <p><strong>noImplicitAny</strong><br>
+当注解类型为any，是否需要注明。true就是需要写清楚。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function jspang(name) {
+  return name;
+}
+//true报错，false不报错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>strictNullChecks</strong><br>
+是否强制检查null类型。true就是检查。
+<code>const jspang: string = null; //true报错，false不报错</code></p> <p><strong>rootDir &amp; outDir</strong><br>
+出入口文件配置。比如我们把所有的 ts 文件都放到 src 下,编译出来 js 文件我们希望放在 build 下。那我们就得这么写：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    &quot;outDir&quot;: &quot;./build&quot; ,
+    &quot;rootDir&quot;: &quot;./src&quot; 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>noUnusedLocals &amp; noUnusedParameters</strong><br>
+对于没有使用却声明了的变量和方法的限制。设置为true，有未使用的编译时就会报错</p> <p><strong>sourceMap</strong><br>
+如果把sourceMap的注释去掉，在打包的过程中就会给我们生成sourceMap文件.</p> <blockquote><p>sourceMap 简单说，Source map 就是一个信息文件，里面储存着位置信息。也就是说，转换后的代码的每一个位置，所对应的转换前的位置。有了它，出错的时候，除错工具将直接显示原始代码，而不是转换后的代码。这无疑给开发者带来了很大方便。</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/VuePress/assets/js/app.77389705.js" defer></script><script src="/VuePress/assets/js/2.f648027b.js" defer></script><script src="/VuePress/assets/js/52.7bd3bed3.js" defer></script>
+  </body>
+</html>
