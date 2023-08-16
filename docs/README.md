@@ -4,7 +4,7 @@ heroImage: /assets/img/詹姆斯1.jpg
 heroText: Mr哎呦喂的小窝
 tagline: 一个阳光、善良、没什么坏心眼的小伙子
 actionText: 随便看看 →
-actionLink: /vue/
+actionLink: /vue/vue/
 features:
 - title: 爱好广泛
   details: 唱歌、画画、跳舞、吉他、旅行,啥都喜欢,只是没什么时间和金钱支持。

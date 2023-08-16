@@ -1,0 +1,67 @@
+Arguments: 
+  E:\node.exe C:\Users\任俊峰\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add async-validato@1.11.5
+
+PATH: 
+  C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\Git\cmd;E:\wamp\bin\mysql\mysql5.7.14\bin;E:\;C:\Users\任俊峰\Desktop;C:\Users\任俊峰\AppData\Roaming\npm;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\任俊峰\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Users\任俊峰\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.4.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/async-validato: [NOT_FOUND] async-validato not found
+      at Request.params.callback [as _callback] (C:\Users\任俊峰\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66987:18)
+      at Request.self.callback (C:\Users\任俊峰\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:200:13)
+      at Request.<anonymous> (C:\Users\任俊峰\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:200:13)
+      at Gunzip.<anonymous> (C:\Users\任俊峰\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:288:20)
+      at Gunzip.emit (events.js:205:15)
+      at endReadableNT (_stream_readable.js:1154:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9)
+
+npm manifest: 
+  {
+    "name": "vuepress",
+    "version": "1.0.0",
+    "description": "使用vuepress搭建个人博客",
+    "main": "index.js",
+    "scripts": {
+      "dev": "vuepress dev docs",
+      "build": "vuepress build docs",
+      "deploy": "deploy.sh"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/18435119815/VuePress.git"
+    },
+    "keywords": [
+      "vuepress"
+    ],
+    "author": "哎呦喂",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/18435119815/VuePress/issues"
+    },
+    "homepage": "https://github.com/18435119815/VuePress#readme",
+    "devDependencies": {
+      "vuepress": "^1.8.0"
+    },
+    "dependencies": {
+      "element-ui": "^2.15.1",
+      "jquery": "^3.5.1",
+      "vue-baidu-map": "^0.21.22"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

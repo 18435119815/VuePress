@@ -2,14 +2,15 @@
 > 引用描述
 
 
-<font color=#0099ff size=72 face="黑体">改变字体大小颜色</font>
+<font color=#0099ff style='fontSize:25px' face="正楷">hash</font> 
 
 ``` 单行代码 ```
 
 ``` javascript 
 		var a = document
 ```
-<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>               重启电脑
+<kbd>src</kbd>-><kbd> wxcomponents</kbd>-><kbd>vant</kbd>   目录结构
 
 [百度](www.baidu.com)
 
@@ -25,10 +26,46 @@
 ![vuepress](/assets/img/hero.png) 
 
 
-<baiduMap></baiduMap>
-
 [去百度](https://www.baidu.com)  
 
 &nbsp; 增加空白行
 
 &emsp; 增加空格
+
+自定义容器
+::: tip 提示
+这是一个提示
+:::
+
+::: warning
+这是一个警告
+:::
+
+::: danger
+这是一个危险警告
+:::
+
+::: details 详情
+这是一个详情块，在 IE / Edge 中不生效
+:::
+
+
+语法高亮
+
+``` js
+export default {
+  name: 'MyComponent',
+  // ...
+}
+```
+
+``` html
+<ul>
+  <li
+    v-for="todo in todos"
+    :key="todo.id"
+  >
+    {{ todo.text }}
+  </li>
+</ul>
+```

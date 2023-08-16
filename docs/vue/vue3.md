@@ -10,6 +10,7 @@
 -   Composition API（解决复杂组件的阅读和复用问题）
 -   Teleport(瞬移组件)、Suspense(解决异步加载组件问题)和全局 API 的修改和优化
 -   更好TypeScript支持
+-   使用Proxy代替defineproperty实现数据响应式
 
 ## 项目搭建
 1.  vue create 项目名称(或者vue ui打开图形构建工具，依次操作)
@@ -42,6 +43,50 @@ Save this as a preset for future projects? (y/N)
 ```
 
 ## 基础知识
+
+### 数据劫持的实现
+#### [Proxy代理](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy)和Reflect反射对象
+>Proxy对象用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如属性查找、赋值、枚举、函数调用等）
+
+  **语法**  
+  `const p = new Proxy(target, handler)`  
+  **示例**
+  ```
+        var obj = {
+            name:'任俊峰',
+            age:25,
+            wife:{
+                name:'范彩乐',
+                age:19
+            }
+        }
+
+        //target代理对象  prop代理对象的属性
+        const newObj = new Proxy(obj,{
+            get(target,prop){
+                console.log('get')
+                return Reflect.get(target,prop)
+            },
+            set(target,prop,val){
+                console.log('set')
+                return Reflect.set(target,prop,val)
+            },
+            deleteProperty(target,prop){
+                console.log('delete')
+                return Reflect.deleteProperty(target,prop)
+            }
+        })
+
+        newObj.name;                        //get
+        newObj.name = '哎呦喂';              //set
+        console.log(obj)                    //{name: "哎呦喂", age: 25, wife: {…}}
+
+        delete newObj.age;                  //delete
+        console.log(obj)                    //{name: "哎呦喂", wife: {…}}
+  ```
+
+
+
 ### ref和setup函数
 - 项目中需要在template中使用的变量，都需要使用ref函数处理
 ```

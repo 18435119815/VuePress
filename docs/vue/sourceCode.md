@@ -1,5 +1,6 @@
 # 源码
 
+## 属性监听
 vue2数据响应式原理利用的是<kbd> Object.defineproperty(obj,key,{}) </kbd> vue在得到我们传进来的data之后，需要对data对象进行遍历，然后给每一个属性都去进行defineproperty的监听 
 ```
 Object.defineProperty(obj, key, {
@@ -60,4 +61,39 @@ obj.info.age = 18
 obj.info = {high:180}
 obj.info.high = 182
 
+```
+## 数据代理
+
+>我们给vue传入的是options对象，为什么使用的时候可以用this.x来访问呢？
+
+简单实现  
+```
+    let vm = new Vue({
+        data(){
+            return{
+                a:1,
+                b:2
+            }
+        }
+    })
+
+    function Vue(options){
+        _this = this;
+        _data = options.data();
+
+        for(let k in _data){
+            Object.defineProperty(_this,k,{
+                get(){
+                    return _data[k]
+                },
+                set(newValue){
+                    _data[k] = newValue
+                }
+            })
+        }
+    }
+
+    console.log(vm.a);
+    vm.b++;
+    console.log(vm.b);
 ```

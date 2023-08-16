@@ -12,3 +12,13 @@
 ## hash和history模式的区别
 
 <img src="/assets/img/vrouter1.jpg" width="500" height="auto" align="middle" />
+
+## 小知识
+
+### $route.matched
+一个数组，包含当前路由的所有嵌套路径片段的路由记录 。路由记录就是 routes 配置数组中的对象副本 (还有在 children 数组)。
+
+### $route.fullPath
+路由是：/path/:type真正路径是：/path/list  
+path匹配路径: /path/list  
+fullPath匹配路由: /path/:type  

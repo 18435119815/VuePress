@@ -1,7 +1,7 @@
 // 引入Element-ui
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import BaiduMap from 'vue-baidu-map'
+// import BaiduMap from 'vue-baidu-map'
 
 
 
@@ -14,7 +14,7 @@ export default ({
     isServer // 当前应用配置是处于 服务端渲染 或 客户端
   }) => {
     Vue.use(Element);
-    Vue.use(BaiduMap, {
-      ak: 'Lgr6GuWg5m31ySlUOz6Gf8ImjtUt1iNr'
-    })
+    // Vue.use(BaiduMap, {
+    //   ak: 'Lgr6GuWg5m31ySlUOz6Gf8ImjtUt1iNr'
+    // })
   }

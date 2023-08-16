@@ -1,7 +1,9 @@
 # 从零开始创建一个vue项目
 
 ## 环境搭建
-1. 从官网上安装<kbd>node.js</kbd>   在本地cmd中通过<kbd>node -v</kbd>,<kbd>npm -v</kbd>查看是否安装成功
+1. 从官网上安装<kbd>node.js</kbd>   在本地cmd中通过<kbd>node -v</kbd>,<kbd>npm -v</kbd>查看是否安装成功  
+    注意：
+    1. 最好不要下载最新版，10-12就可以，不要低于10的
 2. 安装cnpm淘宝镜像
     ```
     npm install -g cnpm --registry=https://registry.npm.taobao.org
@@ -25,3 +27,7 @@
     cnpm install -g vue-cli
     ```
     版本查看：vue -V（注意这里v是大写）
+
+5.  安装依赖
+    只想用于开发依赖的后面加 --save-dev或者-S-D
+    用于生产依赖的后面加    --save 或者 -S

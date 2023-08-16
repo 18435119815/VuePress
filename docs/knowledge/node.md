@@ -1,6 +1,77 @@
 #  node.js
 
+## 作用
+
+1.  将js运行在浏览器中（node将V8引擎封装在了一个容器中，而它本身是用c++写的，可以将js转换成机器代码）
+2.  读写文件
+3.  充当服务器
+4.  连接数据库
+
+## 利用node处理请求
+
+### 基础步骤
+```
+//1.  引入http
+const http = require('http');
+//2.  通过http.createServer创建一个请求
+const server = http.createServer( (req,res) => {} );
+//3.  监听端口 
+server.listen(端口号,()=>{
+    //请求方法和url都在req中
+    const {method,url} = req;
+    res.setHeader('Content-Type'='application/json');
+    res.writeHead(404,'Content-Type','text/plain');
+    res.write('404 Not Fonud');
+
+    //get请求
+    if(method === 'GET'){
+        req.query = querystring.parse(url.split('?')[1]);
+        res.end(JSON.stringify(req.query))
+    }
+    
+
+    //post请求
+    if(method === 'POST'){
+        let postData = '';
+        //数据是以流的方式分批返回的  所以定义一个字符串依次接收
+        req.on('data',(chunk)=>{
+            postData += chunk.toString();
+        });
+        req.on('end',()=>{
+            console.log(postData);
+            res.end('数据接收完毕')
+        });
+    }
+});
+
+
+```
+###  常用api
+1. 设置响应头
+res.setHeader('Content-Type':'application/json')
+2.  重写响应头
+res.writeHead(404,'Content-Type':'text/plain');
+3.  
+res.write('404 Not Fonud')
+4.  响应结果
+res.end('返回内容')
+
+
+### 实战
+1.  初始化项目
+2.  在入口文件中搭建基本的框架
+3.  安装nodemon
+4.  创建路由处理函数
+5.  处理404
 ## 小知识
+### 常用命令
+
+1.  dir             列出当前目录的所有文件
+2.  cd 目录名        进入目录文件夹
+2.  md 目录名        创建目录文件夹
+2.  rd 目录名        删除目录文件夹
+
+### 常用知识
 1. json文件中不能写注释
 2. scripts 配置属性  
 3. npm 安装包 发布包
@@ -44,7 +115,19 @@
 15. 删除文件夹
     fs.rmdir('要删除的文件夹',回调函数)
 16. 读取文件夹
-    fs.readdir("",callback)    
+    fs.readdir("",callback)  
+
+17. MySQL基础命令
+    插入数据  
+    `insert into 表名 (id， name， 表头，表头) values (值， 值， 值， 值)`;  
+    查询全部或者个别表头数据  
+    `select *||id, name, 表头    from 表名`;  
+    查询某个具体值的所有数据  
+    `select *from 表名 where id='1' and||or name='aiyouwei'`;  
+    模糊查询  
+    `select *from 表名 where id like '%1%'`;  
+    设值 
+    `update 表名 set title='标题' where id='1'`;  
 
 ## 牛刀小试
 ```

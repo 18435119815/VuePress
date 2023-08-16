@@ -6,40 +6,297 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
+<style>
+    .wrapper1 {
+        width: 500px;
+        height: 500px;
+        background-color: pink;
+        text-align: center;
+        line-height: 500px;
+    }
+    .wrapper2 {
+        width: 500px;
+        height: 500px;
+        background-color: pink;
+        text-align: center;
+        line-height: 500px;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: deepskyblue;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 auto;
+    }
+</style>
+</head>
 
 <body>
+    <div class="wrapper1">
+        <div class="box">
+        </div>
+    </div>
+    <div class="wrapper2">
+    </div>
+
+
+
 
 </body>
 <script>
+    /*
+    *
+    *
+    *
+    */
+
+    function tree(data) {
+        //首先将一级菜单跟其他级别的菜单分开
+        let parents = data.filter(a => a.pid === 0),
+            children = data.filter(a => a.pid != 0);
+
+
+        madeTree(parents, children);
+
+        //因为确定二级菜单之后还要确定三级菜单，需要用到递归，所以我们写个递归函数
+        function madeTree(parents, children) {
+            parents.map(p => {
+                children.map((c, i) => {
+                    //先找到二级菜单
+                    if (c.pid === p.id) {
+                        // 1.  将二级菜单放入一级菜单的children
+                        if (p.children) {
+                            p.children.push(c)
+                        } else {
+                            p.children = [c]
+                        }
+                        //2.   将该二级菜单与其他的children比较，找出三级菜单
+                        //复制一份children，并将当前二级菜单项剔除
+                        let _children = JSON.parse(JSON.stringify(children));
+                        _children.splice(i, 1);
+                        //递归
+                        madeTree([c], _children)
+                    }
+                })
+            })
+        }
+
+        return parents
+    }
+
+
+    function realRoutes(routes) {
+        let newRoutes = routes.map(r => {
+            let route = {
+                name: r.name,
+                path: r.path,
+                component: () => import(`@/views/${r.name}`)
+            }
+
+            if (r.children) {
+                route.children = realRoutes(r.children)
+            }
+
+            return route
+        })
+
+        return newRoutes
+    }
+
+    let Router = [
+        {
+            id: 1,
+            pid: 0,
+            name: 'father1',
+            path: '/father1'
+        },
+        {
+            id: 2,
+            pid: 1,
+            name: 'son1',
+            path: '/son1'
+        },
+        {
+            id: 3,
+            pid: 0,
+            name: 'father2',
+            path: '/father2'
+        },
+        {
+            id: 4,
+            pid: 3,
+            name: 'son',
+            path: '/son'
+        },
+        {
+            id: 5,
+            pid: 0,
+            name: 'father3',
+            path: '/father3'
+        },
+        {
+            id: 6,
+            pid: 5,
+            name: 'son3',
+            path: '/son3'
+        },
+        {
+            id: 7,
+            pid: 2,
+            name: 'grandson1',
+            path: '/grandson1'
+        },
+        {
+            id: 8,
+            pid: 4,
+            name: 'grandson2',
+            path: '/grandson2'
+        },
+        {
+            id: 9,
+            pid: 6,
+            name: 'grandson3',
+            path: '/grandson3'
+        }
+    ]
+
+    let parentss = tree(Router);
+    let a = realRoutes(parentss);
+    console.log(a)
+
+
+    // --------------------------------深拷贝---------------------------------
+    function deepClone(obj) {
+        let objClone = Array.isArray(obj) ? [] : {};
+        if (obj && typeof obj === "object") {
+            for (key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    //判断ojb子元素是否为对象，如果是，递归复制
+                    if (obj[key] && typeof obj[key] === "object") {
+                        objClone[key] = deepClone(obj[key]);
+                    } else {                    //如果不是，简单复制
+                        objClone[key] = obj[key];
+                    }
+                }
+            }
+        }
+        return objClone;
+    }
+
+
+
+
+    // --------------------------------JS预解析区域---------------------------------
+    //  1.
+    // var x = 5;
+    // a();
+    // function a(){
+    //     alert(x);
+    //     var x = 10;
+    // }
+    // alert(x);
+
+    // 2.
+    // alert(a);
+    // var a = 10;
+    // alert(a);
+    // function a(){
+    //     alert(20)
+    // }
+    // alert(a);
+    // var a = 30;
+    // alert(a);
+    // function a(){
+    //     alert(40)
+    // }
+    // alert(a);
+
+    // var a;   function a(){}
+
+
+
+    // --------------------------------promise执行顺序区域---------------------------------
+    // 1.
+    // Promise.resolve()
+    // .then(()=>{
+    //     console.log(1);
+    //     throw Error('err')
+    // }).catch(()=>{
+    //     console.log(2)
+    // }).then(()=>{
+    //     console.log(3)
+    // })
+
+
+    // (async function(){
+    //     console.log('start');
+    //     const a = await 100;
+    //     console.log('a',a);
+    //     const b = await Promise.resolve(200);
+    //     console.log('b',b);
+    //     const c = await Promise.reject(300);
+    //     console.log('c',c);
+    //     console.log('end');
+    // })()
+
+
+    // 2.
+    // async function async1(){            //微任务
+    //     console.log('async1 start');
+    //     await async2();
+    //     console.log('async1 end')
+    // }
+
+    // async function async2(){            //微任务
+    //     console.log('async2')
+    // }
+
+    // console.log('script start');         //同步任务
+
+    // async1();
+
+    // new Promise((resolve)=>{             //promise初始化传入的函数会立即执行
+    //     console.log('promise1');
+    //     resolve();
+    // }).then(()=>{
+    //     console.log('promise2')
+    // })
+
+    // console.log('script end')            //同步任务
+
+    // // 'script start'  'async1 start'  'async2' 'promise1' 'script end' 'async1 end' 'promise2' 
+
+    // --------------------------------捕获异常区域---------------------------------
     //捕获JS执行异常
     // window.onerror = function (message, source, lineno, colno, error) {
     //     console.log("捕获到异常：", { message, source, lineno, colno, error });
     // };
 
-    //捕获静态资源异常
-    window.addEventListener('error', (error) => {
-        console.log('捕获到异常：', error);
-    }, true)
-    //捕获promise异常
-    window.addEventListener("unhandledrejection", function (e) {
-        e.preventDefault();
-        console.log("捕获到 promise 错误了");
-        console.log("错误的原因是", e.reason);
-        console.log("Promise 对象是", e.promise);
-        return true;
-    });
+    // //捕获静态资源异常
+    // window.addEventListener('error', (error) => {
+    //     console.log('捕获到异常：', error);
+    // }, true)
+    // //捕获promise异常
+    // window.addEventListener("unhandledrejection", function (e) {
+    //     e.preventDefault();
+    //     console.log("捕获到 promise 错误了");
+    //     console.log("错误的原因是", e.reason);
+    //     console.log("Promise 对象是", e.promise);
+    //     return true;
+    // });
 
-    Promise.reject("promise error");
-    new Promise((resolve, reject) => {
-        reject("promise error");
-    });
-    new Promise((resolve) => {
-        resolve();
-    }).then(() => {
-        throw "promise error";
-    });
+    // Promise.reject("promise error");
+    // new Promise((resolve, reject) => {
+    //     reject("promise error");
+    // });
+    // new Promise((resolve) => {
+    //     resolve();
+    // }).then(() => {
+    //     throw "promise error";
+    // });
 
-    const a = {}
+    // const a = {}
 
     // try {
     // a.b = 6
@@ -52,7 +309,40 @@
 
     // a = 5
 
+    //防抖（一段时间内触发多次事件，只执行最后一次）
+
+    function con() { console.log(0) }
+
+    function fangdou(fn, delay) {
+        let timer;
+        return function () {
+            clearTimeout(timer)
+            timer = setTimeout(() => {
+                fn()
+            }, delay)
+        }
+    }
+
+    document.querySelector('.box').addEventListener('click', fangdou(con, 2000))
+
+    //节流（代码执行之后，在设定的时间内，不会执行第二次）
+    function jieliu(fn, delay) {
+        let timer;
+        return function () {
+            if(timer){
+                return
+            }else{
+                timer = setTimeout(()=>{
+                    fn();
+                    timer = null;
+                },delay)
+            }
+        }
+    }
+
+    document.querySelector('.wrapper2').addEventListener('click', jieliu(con, 2000))
+
+
 </script>
 
 </html>
-<!-- <img src="https://itemcdn.zcycdn.com/15af41ec-e6cb-4478-8fad-1a47402f0f25.png"> -->

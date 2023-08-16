@@ -1,4 +1,5 @@
-1. 是什么？   Jacascript编译器，主要用于将 ECMAScript 2015+ 版本的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。
+1. 是什么？   
+Jacascript编译器，主要用于将 ECMAScript 2015+ 版本的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。
 2. 读取的三种方法 
     1. 直接在PowerShell中输入 npx babel 需要编译的文件名
     2. 直接在PowerShell中输入 ./node_modules/.bin/babel 

@@ -1,12 +1,24 @@
-# 浏览器那些你可能不知道的神奇操作！
+# 浏览器
+
+## 那些你可能不知道的神奇操作！
 
 > 我是在搜索看伴娘的过程中发现这个网站的，太神奇了我的天!原来还有这么多神奇的操作我都没见过，快来看看~虽说没什么实际作用，但还是挺好玩的
 ---
 <br><br>
 
+### 谷歌调试工具
 
+**打开命令菜单**：Ctrl + Shift + P(windows)  Command + Shift + P(Mac))  
 
-## 在浏览器地址直接运行JS代码
+**截屏**：打开命令菜单，输入"screenshot"，下方会出现四个选择项，第一个是手动截屏；第二个是截整个网页的屏幕，包括需要滑动浏览的部分；第三个是节点截屏，先用调试台箭头选择需要截屏的节点，再输入命令，即可。
+
+#### css调试
+
+#####   快速查找节点
+1.  Elements界面 ctr+F 输入查找
+2.  Console界面  inspect(document.getElementById('')) 快速定位
+
+### 在浏览器地址直接运行JS代码
 ```
 javascript:alert('hello from address bar :)')
 ```  
@@ -23,7 +35,7 @@ BUT!!!!  注意这里:
 
 
 
-## 在浏览器地址栏运行HTML代码
+### 在浏览器地址栏运行HTML代码
 ```
 data:text/html,<h1>Hello, world!</h1>
 ```  
@@ -37,7 +49,7 @@ data:text/html,<h1>Hello, world!</h1>
 
 
 
-## 把浏览器当编辑器
+### 把浏览器当编辑器
 ```
 data:text/html, <html contenteditable>
 ```  
@@ -60,11 +72,9 @@ document.body.contentEditable='true';
 
 
 
-# JavaScript那些你可能不知道的神奇操作！ 
-
-<br><br> 
+## JavaScript那些你可能不知道的神奇操作！ 
   
-## 不声明第三个变量的值交换
+### 不声明第三个变量的值交换
 我们都知道交换两个变量值的常规做法，那就是声明一个中间变量来暂存.(下面这种方法真的万万没想到，牛的)
 ```
 var a=1,b=2;
@@ -73,7 +83,7 @@ a=[b,b=a][0];
 console.log(a,b);   //2,1
 ```
 
-## 利用a标签解析URL中的各项参数
+### 利用a标签解析URL中的各项参数
 
 很多时候我们会从一个URL中提取域名，查询关键字，变量参数值等，而万万没想到可以让浏览器方便地帮我们完成这一任务而不用我们写正则去抓取。方法就在JS代码里先创建一个a标签然后将需要解析的URL赋值给a的href属性，然后就得到了一切我们想要的了。
 
@@ -134,7 +144,8 @@ console.log(a.host);  //www.cnblogs.com
 
 ---
 <br><br>
-##  页面拥有ID的元素会创建全局变量
+
+###  页面拥有ID的元素会创建全局变量
 在一张HTML页面中，所有设置了ID属性的元素会在JavaScript的执行环境中创建对应的全局变量，这意味着document.getElementById像人的阑尾一样显得多余了。但实际项目中最好老老实实该怎么写就怎么写，毕竟常规代码出乱子的机会要小得多。
 ```
 <div id="sample"></div>
@@ -148,7 +159,7 @@ console.log(a.host);  //www.cnblogs.com
 
 
 
-## 加载CDN文件时，可以省掉HTTP标识
+### 加载CDN文件时，可以省掉HTTP标识
 现在很流行的CDN即从专门的服务器加载一些通用的JS和CSS文件，出于安全考虑有的CDN服务器使用HTTPS方式连接，而有的是传统的HTTP，其实我们在使用时可以忽略掉这个，将它从URL中省去。
 ```
 <script src="//domain.com/../path/to/script.js"></script>
@@ -158,7 +169,7 @@ console.log(a.host);  //www.cnblogs.com
 
 
 
-## 利用script标签保存任意信息
+### 利用script标签保存任意信息
 将script标签设置为type='text'然后可以在里面保存任意信息，之后可以在JavaScript代码中很方便地获取。
 
 ```
@@ -174,7 +185,7 @@ var text = document.getElementById('template').innerHTML
 
 
 
-## console.table
+### console.table
 Chrome专属，IE绕道的console方法。可以将JavaScript关联数组以表格形式输出到浏览器console，效果很惊赞，界面很美观。
 
 ![vuepress](/assets/img/consoleTable.jpg)
@@ -184,12 +195,11 @@ Chrome专属，IE绕道的console方法。可以将JavaScript关联数组以表�
 
 
 
-# CSS那些你可能不知道的神奇操作！ 
-<br><br> 
+## CSS那些你可能不知道的神奇操作！ 
 
 
 
-## 简单的文字模糊效果
+### 简单的文字模糊效果
 以下两行简单的CSS3代码可达到将文字模糊化处理的目的，出来的效果有点像使用PS的滤镜，so cool!
 ```
 p {
@@ -202,7 +212,7 @@ p {
 
 <br><br>
 
-## 禁止鼠标显示 
+### 禁止鼠标显示 
 ```
 *{
     cursor: none!important;
@@ -211,7 +221,7 @@ p {
 
 <br><br>
 
-## 实时编辑CSS
+### 实时编辑CSS
 <br>
 通过设置style标签的display:block样式可以让页面的style标签显示出来，并且加上contentEditable属性后可以让样式成为可编辑状态，更改后的样式效果也是实时更新呈现的。此技巧在IE下无效。
 

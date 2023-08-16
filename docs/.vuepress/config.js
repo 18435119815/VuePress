@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Mr哎呦喂的博客',
-  description: '欢迎来到我的小窝',
+  description: 'Mr哎呦喂的博客',
   base:'/VuePress/',
   head: [
     ["link", { rel: "icon", href: "/assets/img/icon1.png" }],
@@ -19,6 +19,9 @@ module.exports = {
       `
     ]
   ],
+  markdown:{
+    lineNumbers:true
+  },
   themeConfig: {
     logo: '/assets/img/hero.png',
     //禁用页面所有导航(导航栏消失不见)
@@ -26,55 +29,10 @@ module.exports = {
     // 导航栏深度
     sidebarDepth: 3,
     // 头部导航配置
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '关于我', link: '/myself/' },
-      { text: '人生心得', link: '/lifeExperience/' },
-      { text: '网址导航', link: '/website/' },
-      {
-        text: '技术文档',
-        items: [
-          {
-            text: 'JS', items: [
-              { text: '基础使用', link: '/JS/' },
-              { text: '浏览器', link: '/browser/' },
-            ]
-          },
-          { text: 'vue', items: [
-            { text: 'ssr', link: '/vue/ssr/' }
-          ] },
-          { text: '其他知识', items: [
-            { text: '移动端', link: '/knowledge/mobileAPP/' },
-            { text: 'typeScript', link: '/typeScript/' },
-            { text: '日记', link: '/cola/' }
-          ] }
-        ]
-      },
-      {
-        text: '其他知识',
-        items: [
-          {
-            text: '相机',link: '/other/camera' 
-          },
-          {
-            text: '面料',link: '/other/fabric' 
-          },
-          {
-            text: '粤语',link: '/other/yueyu' 
-          },
-        ]
-      }
-    ],
-    sidebar: {
-      '/JS/':['','Object','Math','ES6'],
-      '/foo/':['','one','two'],
-      '/vue/':['vue','vue-x','vue-router','interview','sourceCode','ssr','project','vue3','projectPractice'],
-      '/lifeExperience/':[''],
-      '/markDown/':[''],
-      '/website/':[''],
-      '/browser/':[''],
-      '/knowledge/':['littleKnowledge','vscode','mobileAPP','webpack','other'],
-      '/typeScript/':['']
-    }
+    nav: require('./nav'),
+    sidebar: require('./sidebar'),
+    // sidebar:'auto'
+    //显示所有嵌套标题
+    // displayAllHeaders: true,
   }
 }

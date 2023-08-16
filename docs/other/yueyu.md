@@ -24,7 +24,6 @@
     多谢（do zai）[很重的感谢，也可以说多谢晒]
 8.  <font color=#0099ff face="黑体">唔使</font>（emm sai）[不用]  
     唔使唔该（emm sai emm gai）[不用谢]  
-    多谢（do zai）[很重的感谢，也可以说多谢晒]
 
 9.  <font color=#0099ff face="黑体">唔好意思</font>（emm hao yi syi）[不好意思]  
     <font color=#0099ff face="黑体">对唔住</font>（dui emm ju）[对不住]  
